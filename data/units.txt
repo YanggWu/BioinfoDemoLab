@@ -1,0 +1,7 @@
+sample	fq1	fq2
+A-rep1	/home/software/test/data/A-rep1_1.fq.gz	/home/software/test/data/A-rep1_2.fq.gz
+A-rep2	/home/software/test/data/A-rep2_1.fq.gz	/home/software/test/data/A-rep2_2.fq.gz
+A-rep3	/home/software/test/data/A-rep3_1.fq.gz	/home/software/test/data/A-rep3_2.fq.gz
+B-rep1	/home/software/test/data/B-rep1_1.fq.gz	/home/software/test/data/B-rep1_2.fq.gz
+B-rep2	/home/software/test/data/B-rep2_1.fq.gz	/home/software/test/data/B-rep2_2.fq.gz
+B-rep3	/home/software/test/data/B-rep3_1.fq.gz	/home/software/test/data/B-rep3_2.fq.gz

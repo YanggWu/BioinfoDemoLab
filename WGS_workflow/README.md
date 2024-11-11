@@ -37,13 +37,13 @@
 - **BWA**：0.7.17 或以上版本
 - **Samtools**：1.9 或以上版本
 - **Qualimap**：2.2.1 或以上版本
-- **Picard**：2.20.8 或以上版本（建议使用 Conda 环境管理）
+- **Picard**：2.20.8 或以上版本
 - **MultiQC**：1.7 或以上版本
 - **FreeBayes**：1.3.1 或以上版本
 - **Bcftools**：1.9 或以上版本
 - **Conda/Mamba**：用于环境管理
 
-**注意**：建议使用 Conda 或 Mamba 创建独立的环境来管理上述软件，以避免版本冲突。
+**注意**：建议使用 Conda 或 Mamba 创建独立的环境来管理上述软件，以避免版本冲突。该脚本使用 conda run 解决Picard与其他软件之间的环境冲突。请根据自己的系统环境进行修改。
 
 ---
 
@@ -88,8 +88,6 @@ bash script.sh -f reference.fa -s sample1 -1 sample1_R1.fastq.gz -2 sample1_R2.f
 3. **检查 Samtools 索引文件**：
    - 脚本会检查是否存在参考基因组的 `.fai` 索引文件。
    - 如果不存在，将自动运行 `samtools faidx` 创建索引。
-
-**注意**：对于较大的基因组，创建索引可能需要较长时间。
 
 ### 步骤 1：使用 Fastp 进行质量控制和剪切
 

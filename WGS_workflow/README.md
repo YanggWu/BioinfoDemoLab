@@ -154,7 +154,7 @@ samtools flagstat [样本名].sorted.bam > [样本名]_flagstat.txt
 
 ### 步骤 3：计算数据指标
 
-**目的**：评估 BAM 文件的质量，包括测序深度、覆盖度等指标。
+**目的**：使用 qualimap 评估 BAM 文件的质量，包括测序深度、覆盖度等指标。
 
 **命令**：
 

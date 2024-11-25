@@ -20,6 +20,7 @@
     - [步骤 7：使用 bcftools 过滤变异](#步骤-7使用-bcftools-过滤变异)
   - [输出文件说明](#输出文件说明)
   - [注意事项](#注意事项)
+  - [文献引用](#文献引用)
 
 ---
 
@@ -281,3 +282,16 @@ bcftools filter \
 ---
 
 **注**：在使用脚本前，请仔细阅读并理解各步骤，根据自己的数据和需求进行调整。
+
+## 文献引用
+
+| 工具名        | 简介                                                         | 文献支撑                                                     |
+| ------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| **Fastp**     | 高效的多功能 FASTQ 数据质量控制工具，用于去除低质量 reads 和接头序列，提高后续分析质量。 | Chen et al., 2018. *"Fastp: an ultra-fast all-in-one FASTQ preprocessor."* Bioinformatics. [DOI:10.1093/bioinformatics/bty560](https://doi.org/10.1093/bioinformatics/bty560) |
+| **BWA-MEM**   | 基于 Burrows-Wheeler 转换的高效比对算法，适合基因组序列的快速比对。 | Li et al., 2010. *"Fast and accurate short read alignment with Burrows-Wheeler Transform."* Bioinformatics. [DOI:10.1093/bioinformatics/btp324](https://doi.org/10.1093/bioinformatics/btp324) |
+| **Samtools**  | 提供对 BAM/SAM 文件的操作，如排序、索引和统计等，是标准的高通量数据分析工具。 | Li et al., 2009. *"The Sequence Alignment/Map format and SAMtools."* Bioinformatics. [DOI:10.1093/bioinformatics/btp352](https://doi.org/10.1093/bioinformatics/btp352) |
+| **Qualimap**  | 用于 BAM 文件质量评估的工具，可计算覆盖度、GC 含量等多种指标并生成可视化报告。 | García-Alcalde et al., 2012. *"Qualimap: evaluating next-generation sequencing alignment data."* Bioinformatics. [DOI:10.1093/bioinformatics/bts503](https://doi.org/10.1093/bioinformatics/bts503) |
+| **Picard**    | 提供对 BAM/SAM 文件的多种操作，包括标记重复序列，是高通量测序数据分析的重要工具。 | Broad Institute. Picard Toolkit. http://broadinstitute.github.io/picard/ |
+| **MultiQC**   | 整合多个质量控制工具的结果，生成综合性报告，便于大规模数据分析和快速检查。 | Ewels et al., 2016. *"MultiQC: summarize analysis results for multiple tools and samples in a single report."* Bioinformatics. [DOI:10.1093/bioinformatics/btw354](https://doi.org/10.1093/bioinformatics/btw354) |
+| **FreeBayes** | 基于贝叶斯方法的变异检测工具，可同时检测 SNP 和 Indel，是灵活且准确的变异检测工具之一。 | Garrison & Marth, 2012. *"Haplotype-based variant detection from short-read sequencing."* arXiv preprint. [arXiv:1207.3907](https://arxiv.org/abs/1207.3907) |
+| **Bcftools**  | 用于操作和分析 VCF 文件的高效工具，可以进行变异过滤、合并、注释等操作。 | Danecek et al., 2021. *"Twelve years of SAMtools and BCFtools."* GigaScience. [DOI:10.1093/gigascience/giab008](https://doi.org/10.1093/gigascience/giab008) |
